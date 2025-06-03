@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "AGMP Guidelines",
   description: "AGMP Guidelines",
-  base: "agmp-docs",
+  base: "/agmp-docs",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
