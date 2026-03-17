@@ -4,12 +4,17 @@ export default defineConfig({
   title: "AGMP Docs",
   description: "Genomics & Chatbot Platform Documentation",
 
+  // ------------------
+  // Clean URLs
+  // ------------------
+  cleanUrls: true, // Removes .html from URLs (adds trailing slash, e.g., /faq/)
+
   themeConfig: {
     // ------------------
     // Top navigation bar
     // ------------------
     nav: [
-      { text: 'AGVD documentation', link: '/' },
+      { text: 'AGMP documentation', link: '/' },
       { text: 'About', link: '/about' },
       { text: 'Releases', link: '/releases' },
       { text: 'FAQ', link: '/faq' },
@@ -17,34 +22,9 @@ export default defineConfig({
     ],
 
     // ------------------
-    // Sidebar for left navigation
+    // Sidebar removed
     // ------------------
-    sidebar: [
-      {
-        text: 'Introduction',
-        items: [
-          { text: 'Overview', link: '/' }
-        ]
-      },
-      {
-        text: 'Getting Started',
-        items: [
-          { text: 'Installation', link: '/getting-started/installation' }
-        ]
-      },
-      {
-        text: 'Tutorials',
-        items: [
-          { text: 'Markdown Guide', link: '/tutorials/markdown-examples' }
-        ]
-      },
-      {
-        text: 'API Reference',
-        items: [
-          { text: 'API Examples', link: '/api/api-examples' }
-        ]
-      }
-    ],
+    // sidebar: [], // <-- removed to disable side navigation
 
     // ------------------
     // Local search
