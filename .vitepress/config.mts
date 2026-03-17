@@ -1,29 +1,56 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "AGMP Guidelines",
-  description: "AGMP Guidelines",
-  base: "/agmp-docs",
+  title: "AGMP Docs",
+  description: "Genomics & Chatbot Platform Documentation",
+
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    // ------------------
+    // Top navigation bar
+    // ------------------
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'AGVD documentation', link: '/' },
+      { text: 'About', link: '/about' },
+      { text: 'Releases', link: '/releases' },
+      { text: 'FAQ', link: '/faq' },
+      { text: 'Tutorials', link: '/tutorials/markdown-examples' }
     ],
 
+    // ------------------
+    // Sidebar for left navigation
+    // ------------------
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Introduction',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Overview', link: '/' }
+        ]
+      },
+      {
+        text: 'Getting Started',
+        items: [
+          { text: 'Installation', link: '/getting-started/installation' }
+        ]
+      },
+      {
+        text: 'Tutorials',
+        items: [
+          { text: 'Markdown Guide', link: '/tutorials/markdown-examples' }
+        ]
+      },
+      {
+        text: 'API Reference',
+        items: [
+          { text: 'API Examples', link: '/api/api-examples' }
         ]
       }
     ],
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    // ------------------
+    // Local search
+    // ------------------
+    search: {
+      provider: 'local'
+    }
   }
 })
