@@ -1,73 +1,33 @@
 :root {
-  --agmp-content-width: 880px;
   --agmp-navbar-height: 64px;
-}
-
-/* Navbar alignment */
-.VPNavBar .wrapper,
-.VPNavBar .container {
-  max-width: var(--agmp-content-width) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-/* Remove extra padding on navbar title and menu */
-.VPNavBarTitle {
-  padding-left: 0 !important;
-}
-
-.VPNavBarMenu {
-  padding-left: 0 !important;
 }
 
 /* Push content below fixed navbar */
 .VPContent {
-  padding: 0 !important;
   padding-top: var(--agmp-navbar-height) !important;
 }
 
-/* Reset all VitePress doc inner containers */
-.VPDoc .container,
-.VPDoc .content,
-.VPDoc .content-container,
-.VPDoc > .container,
-.vp-doc {
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+/* Remove sidebar space so content centers properly */
+.VPSidebar, .VPDocAside {
+  display: none !important;
 }
 
-/* Make VPDoc the single width constraint */
-.VPDoc {
-  max-width: var(--agmp-content-width) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  padding-top: 1.5rem !important;
-  width: 100% !important;
-}
-
-/* Make paragraph text use full container width */
-.vp-doc p {
+/* Make content take full width without sidebar offset */
+.VPDoc:not(.has-sidebar) .content {
   max-width: 100% !important;
 }
 
-/* Reset doc content's default max-width (~688px) */
-.VPDoc .vp-doc div[class*="content"] {
+.VPDoc:not(.has-sidebar) .container {
   max-width: 100% !important;
+}
+
+/* Match content width to navbar */
+.VPDoc .content-container {
+  max-width: 768px !important;
 }
 
 /* Hide the # anchor link on headings */
 .vp-doc .header-anchor {
-  display: none !important;
-}
-
-/* Hide sidebar remnants */
-.VPSidebar, .VPDocAside {
   display: none !important;
 }
 

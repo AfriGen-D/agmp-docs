@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: "AGMP Docs",
-  description: "Genomics & Chatbot Platform Documentation",
+  description: "AGMP Documentation",
   cleanUrls: true,
   themeConfig: {
     nav: [
