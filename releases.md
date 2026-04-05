@@ -1,5 +1,5 @@
 
-# Version History
+### Version History
 
 AGMP v1.2: 2025/04/30
 - Added Gwas Catalogue Dataset, Heat maps
