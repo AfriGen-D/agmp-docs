@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "AGMP Docs",
   description: "AGMP Documentation",
+  base: '/agmp-docs/',
   cleanUrls: true,
   themeConfig: {
     nav: [
