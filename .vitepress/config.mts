@@ -3,16 +3,8 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "AGMP Docs",
   description: "Genomics & Chatbot Platform Documentation",
-
-  // ------------------
-  // Clean URLs
-  // ------------------
-  cleanUrls: true, // Removes .html from URLs (adds trailing slash, e.g., /faq/)
-
+  cleanUrls: true,
   themeConfig: {
-    // ------------------
-    // Top navigation bar
-    // ------------------
     nav: [
       { text: 'AGMP documentation', link: '/' },
       { text: 'About', link: '/about' },
@@ -20,15 +12,7 @@ export default defineConfig({
       { text: 'FAQ', link: '/faq' },
       { text: 'Tutorials', link: '/tutorials/markdown-examples' }
     ],
-
-    // ------------------
-    // Sidebar removed
-    // ------------------
-    // sidebar: [], // <-- removed to disable side navigation
-
-    // ------------------
-    // Local search
-    // ------------------
+    sidebar: {},
     search: {
       provider: 'local'
     }
