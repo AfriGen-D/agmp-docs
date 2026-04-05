@@ -1,5 +1,5 @@
 
-# Background
+### Background
 
 The genomic profiles of African individuals and individuals of recent African descent are highly diverse. This genomic diversity is associated with susceptibility and predisposition to various communicable and non-communicable diseases in these populations. Similarly, genomic diversity is also associated with the response to various therapies deployed for these diseases. To proliferate scientific discovery related to genomic medicine in Africa, access to curated African data is required to highlight unique anomalies and facilitate research practices.
 
