@@ -1,6 +1,7 @@
----
 
-layout: home
+### Overview
+This site provides documentation for AGMP including tutorials, FAQs, and release notes.
 
-
-### Home
+- Learn how to use AGMP
+- Explore tutorials
+- Check releases
